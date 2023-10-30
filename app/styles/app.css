@@ -1,1 +1,190 @@
-/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+@import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,700italic);
+
+/**
+ * Base Elements
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+a,
+button {
+  font-family: "Lato", "Open Sans", "Helvetica Neue", "Segoe UI", Helvetica,
+    Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.grid-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  border: 1px solid;
+  height: 100%;
+  border-radius: 10px;
+  margin: 20px;
+  margin-top: 0%;
+}
+
+.jumbo {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 20px;
+}
+
+.jumbo img {
+  align-items: center;
+}
+
+.menu {
+  position: relative;
+  margin-bottom: 2%;
+  display: flex;
+  background-color: black;
+  width: 100%;
+  padding: 10px;
+}
+
+
+.rentals {
+  margin: 20px;
+  margin-top: 2%;
+  display: flex;
+  padding: 10px;
+}
+
+.rentals ul {
+  width: 100%;
+}
+
+.rentals li {
+  display: flex;
+  font-size: 15px;
+}
+
+
+.rentalContainer {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+
+.detailsContainer h3 {
+  font-size: 25px;
+}
+
+.listImages {
+  display: flex;
+}
+
+.listImages img {
+  width: 93%;
+  height: 88%;
+}
+
+.menu h1 {
+  color: red;
+  margin-right: 50px;
+  display: flex;
+  font-style: italic;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+}
+
+.links h2 {
+  color: white;
+  margin-right: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+  margin-top: 10%;
+}
+
+.button {
+  text-decoration: none;
+  background-color: blue;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 155px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.bannerTxt {
+  width: 90%;
+  height: 100%;
+}
+
+.bannerTxt h2 {
+  color: white;
+  font-size: 35px;
+}
+
+.bannerTxt p {
+  font-size: 15px;
+}
+
+.tomster {
+  object-fit: contain;
+  display: flex;
+  justify-content: flex-end;
+  align-content: end;
+  height: 60%;
+  width: 50%;
+}
+
+/* ---- reset ---- */
+
+body {
+  margin: 0;
+  background-color: black;
+  font:
+    normal 75% Arial,
+    Helvetica,
+    sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 150vh;
+  background-color: #000000;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}

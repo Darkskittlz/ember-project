@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>EmberProject</title>
+    <title>Ember Project</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,11 +14,14 @@
     {{content-for "head-footer"}}
   </head>
   <body>
-    {{content-for "body"}}
+    <div id="particles-js">
 
-    <script src="{{rootURL}}assets/vendor.js"></script>
-    <script src="{{rootURL}}assets/ember-project.js"></script>
+      {{content-for "body"}}
 
-    {{content-for "body-footer"}}
+
+      <script src="{{rootURL}}assets/vendor.js"></script>
+      <script src="{{rootURL}}assets/ember-project.js"></script>
+      {{content-for "body-footer"}}
+    </div>
   </body>
 </html>

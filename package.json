@@ -76,5 +76,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "particles.js": "^2.0.0"
   }
 }
