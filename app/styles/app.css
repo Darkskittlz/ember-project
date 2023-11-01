@@ -39,9 +39,9 @@ button {
 
   @media screen and (max-width: 960px){
     margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
   }
 }
 
@@ -116,7 +116,12 @@ button {
 
 .detailsContainer h3 {
   font-size: 25px;
+  text-align: center;
   color: white;
+
+  @media screen and (max-width: 960px) {
+    font-size: 20px;
+  }
 }
 
 .detailsContainer span {
@@ -127,11 +132,16 @@ button {
 
 .listImages {
   display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
  .listImages img {
   width: 93%;
-  height: 88%;
+
+  @media screen and (max-width: 960px) {
+    width: 60%;
+  }
 }
 
 .menu h1 {
