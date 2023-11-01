@@ -96,6 +96,10 @@ button {
     display: block;
     margin-bottom: 20px;
   }
+  @media screen and (max-width: 830px) {
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 .detailsContainer {
