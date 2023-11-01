@@ -93,10 +93,13 @@ button {
   grid-template-columns: 2fr 1fr;
 
   @media screen and (max-width: 960px) {
+    display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 20px;
   }
+
   @media screen and (max-width: 830px) {
+    display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 20px;
   }
@@ -125,6 +128,7 @@ button {
 
   @media screen and (max-width: 960px){
     text-align: center;
+    color: white;
   }
 }
 
@@ -135,6 +139,7 @@ button {
 
   @media screen and (max-width: 960px) {
     font-size: 20px;
+    color: white;
   }
 }
 
