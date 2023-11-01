@@ -34,14 +34,22 @@ button {
   border: 1px solid;
   height: 100%;
   border-radius: 10px;
-  margin: 20px;
+  margin: 300px;
   margin-top: 0%;
+
+  @media screen and (max-width: 960px){
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+  }
 }
 
 .jumbo {
   display: flex;
   flex-direction: row-reverse;
   padding: 20px;
+  color: white;
 }
 
 .jumbo img {
@@ -77,25 +85,51 @@ button {
 
 .rentalContainer {
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 2fr 1fr;
+
+  @media screen and (max-width: 960px) {
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 .detailsContainer {
   display: flex;
   flex-direction:column;
   align-items: center;
+  justify-content: center;
+  margin-top: -45px;
+
+  @media screen and (max-width: 960px) {
+    margin-top: 0px;
+  }
 }
 
+.detailsContainer div {
+  display: flex;
+  color: white;
+}
+
+.detailsContainer h1 {
+  font-size: 15px;
+}
 
 .detailsContainer h3 {
   font-size: 25px;
+  color: white;
+}
+
+.detailsContainer span {
+  color: white;
+  font-size: 15px;
+  margin-right: 5px;
 }
 
 .listImages {
   display: flex;
 }
 
-.listImages img {
+ .listImages img {
   width: 93%;
   height: 88%;
 }
@@ -163,7 +197,7 @@ button {
 /* ---- reset ---- */
 
 body {
-  margin: 0;
+  margin: 0px;
   background-color: black;
   font:
     normal 75% Arial,
@@ -181,10 +215,14 @@ canvas {
 #particles-js {
   position: absolute;
   width: 100%;
-  height: 150vh;
+  height: 290vh;
   background-color: #000000;
   background-image: url("");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+
+  @media screen and (max-width: 960px){
+    height: 250vh;
+  }
 }
