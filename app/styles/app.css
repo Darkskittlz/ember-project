@@ -65,6 +65,11 @@ button {
   padding: 10px;
 }
 
+.menu h1 {
+  margin-right: 10px;
+  color: red;
+  font-style: italic;
+}
 
 .rentals {
   margin: 20px;
@@ -193,6 +198,7 @@ button {
 
 .bannerTxt p {
   font-size: 15px;
+  color: white;
 }
 
 .tomster {
